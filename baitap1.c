@@ -1,3 +1,4 @@
+/*đây là bài tập code Macro c */
 #include<stdio.h>
 
 typedef enum
