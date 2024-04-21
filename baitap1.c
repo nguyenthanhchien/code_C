@@ -3,12 +3,12 @@
 
 typedef enum
 {
-    printError = 1,
-    printWarning=2,
-    printInfo=3,
-    printDebug=4,
-    printCritical=5,
-    printSuccess=6
+    printError,
+    printWarning,
+    printInfo,
+    printDebug,
+    printCritical,
+    printSuccess
 } ACTION;
 
 
