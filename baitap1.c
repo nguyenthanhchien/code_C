@@ -1,9 +1,9 @@
 /*đây là bài tập code Macro c */
 #include<stdio.h>
-
+// liet ke gan value 0,1,2,3,4,5 
 typedef enum
 {
-    printError,
+    printError=1,
     printWarning,
     printInfo,
     printDebug,
@@ -18,7 +18,7 @@ typedef enum
 #define CASE_OPTION(number, function, ...) \
     case number: function(__VA_ARGS__); break;
 
-#define HANDLE_ERROR(condition, ACTION, ...) \
+#define HANDLE_ERROR(condition, ACTION , ...) \
     do { \
         if (condition) { \
             switch (ACTION) { \
@@ -30,7 +30,8 @@ typedef enum
 
 int main() {
     int x = 1;
-
+    ACTION type = printCritical;
+    printf("value :%d\n", type);
     HANDLE_ERROR(x > 0,printError, "Error");
     HANDLE_ERROR(x > 0,printWarning, "Warning");
     HANDLE_ERROR(x > 0,printDebug, "Debug");
