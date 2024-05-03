@@ -1,6 +1,6 @@
 /*đây là bài tập code Macro c */
 #include<stdio.h>
-// liet ke gan value 0,1,2,3,4,5 
+// liet ke gan value 1,2,3,4,5,6
 typedef enum
 {
     printError=1,
